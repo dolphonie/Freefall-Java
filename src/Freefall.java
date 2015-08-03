@@ -126,10 +126,12 @@ public class Freefall extends Application {
 			System.out.println(et);
 		switch (kc) {
 
+		case A:
 		case LEFT:
 			if (player.getMoveDir() != Player.Direction.RIGHT)
 				player.setMovDir(Player.Direction.NONE);
 			break;
+		case D:
 		case RIGHT:
 			if (player.getMoveDir() != Player.Direction.LEFT)
 				player.setMovDir(Player.Direction.NONE);
